@@ -12,11 +12,18 @@
 </head>
 
 <body>
-    <div id="demo"></div>
-    <div id="instrukcja">Ćwiczenie nr </div>
-    <div id="temat">Temat: </div>
-    <div id="specyfikacja"></div><br />
-    <div id="punktroot"></div>
+    <div id="interface">
+        <label for="wybor">Wybierz instrukcję:</label>
+
+        <select id="wybor" onchange="wypiszInstrukcje()">
+            <option value="0">1. Podstawy HTML</option>
+            <option value="1">2. HTML DOM</option>
+            <option value="2">3. JavaScript – cz. 1</option>
+            <option value="3">4. JavaScript - cz. 2</option>
+        </select>
+    </div>
+
+    <div id="instrukcja"></div>
 </body>
 
 </html>

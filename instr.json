@@ -1,6 +1,52 @@
 {
     "instrukcja": [
         {
+            "numer": 1,
+            "temat": "Podstawy HTML",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 2,
+            "temat": "HTML DOM",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "numer": 3,
             "temat": "JavaScript – cz. 1",
             "specyfikacja": [
@@ -11,7 +57,11 @@
                 {
                     "opis": "Test",
                     "link": "https://www.witam.pl/pozdrawiam/"
-                }
+                },
+                {
+                    "opis": "Test2",
+                    "link": "https://www.test.test/test/"
+                }   
             ],
             "punkt": [
                 {
@@ -47,6 +97,29 @@
                         {
                             "tytul": "Dodanie i usuwanie właściwości",
                             "kod": "&lt;html&gt;&#10;&lt;script&gt;&#10;  var myComputer = {&#10;   name: 'IBM',&#10;   CD: 'Pionier',&#10;   HDD: 'WD'&#10;  }&#10;  alert(myComputer.CD);&#10;  delete_myComputer.CD;     // usuni&#281;cie&#10;  alert(myComputer.CD);    // undefined&#10;  myComputer.DVD = &#34;DVP&#8208;SR370&#34;; // dodanie&#10;  alert(myComputer.DVD);&#10;&lt;/script&gt;&#10;&lt;/html&gt;",
+                            "podpis": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
                             "podpis": ""
                         }
                     ]
