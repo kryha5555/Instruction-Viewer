@@ -1,0 +1,57 @@
+{
+    "instrukcja": [
+        {
+            "numer": 3,
+            "temat": "JavaScript – cz. 1",
+            "specyfikacja": [
+                {
+                    "opis": "Tutorial",
+                    "link": "https://www.w3schools.com/js/"
+                },
+                {
+                    "opis": "Test",
+                    "link": "https://www.witam.pl/pozdrawiam/"
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "Wstęp",
+                    "tekst": "tutaj się uczymy o js",
+                    "podpunkt": [
+                        {
+                            "tytul": "Wyłączona obsługa skryptów",
+                            "kod": "&lt;head&gt;&#10;    &lt;style&gt;&#10;        div.js _ sup _ depend {&#10;            color: green;&#10;        }&#10;    &lt;/style&gt;&#10;    &lt;noscript&gt;&#10;        &lt;style&gt;&#10;            div.js_supp _ depend {&#10;                color: red;&#10;            }&#10;        &lt;/style&gt;&#10;    &lt;/noscript&gt;&#10;&lt;/head&gt;&#10;&#10;&lt;body&gt;&#10;    &lt;div class=&#34;js _ sup _ depend&#34;&gt;&#10;        &lt;h2&gt;Your browser &lt;span id=&#34;js _ depend&#34;&gt;&lt;noscript&gt;does not&#10;                    support JavaScript!!!&lt;/noscript&gt;&lt;/span&gt;&lt;/h2&gt;&#10;    &lt;/div&gt;&#10;    &lt;script type=&#34;text/javascript&#34;&gt;&#10;        document.getElementById(&#34;js _ depend&#34;).innerHTML = &#34;support JavaScript!&#34;;&#10;    &lt;/script&gt;&#10;&lt;/body&gt;",
+                            "podpis": "fajny kodzik"
+                        },
+                        {
+                            "tytul": "Zmienne globalne i lokalne",
+                            "kod": "&lt;html&gt;&#10;&lt;head&gt;&#10;  ...&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;  &lt;script type=&#34;text/javascript&#34;&gt;&#10;   var a = 20;&#10;   document.write(&#34;a = &#34; + a + &#34;&lt;br /&gt;&#34;);&#10;   {&#10;     let a = 2;&#10;     document.write(&#34;a = &#34; + a + &#34;&lt;br /&gt;&#34;);&#10;   }&#10;   document.write(&#34;a = &#34; + a + &#34;&lt;br /&gt;&#34;);&#10;   var b = 'OK';&#10;   var c = true;&#10;   function myFunction() {&#10;    c = 55;&#10;    var a = 1;   //Sprawdzi&#263;, co stanie si&#281; po usuni&#281;ciu &#8222;var&#8221; przed &#8222;a&#8221;&#10;    var d = 'NO';&#10;    result = a + c;&#10;    return result;&#10;   }&#10;   var fun = myFunction();&#10;   document.write(&#34;a &#8208;&gt; &#34; + typeof (a) + &#34;&lt;br /&gt;&#34;);&#10;   document.write(&#34;b &#8208;&gt; &#34; + typeof (b) + &#34;&lt;br /&gt;&#34;);&#10;   document.write(&#34;c &#8208;&gt; &#34; + typeof (c) + &#34;&lt;br /&gt;&#34; + &#34;&lt;br /&gt;&#34;);&#10;   document.write(&#34;a = &#34; + a + &#34;&lt;br /&gt;&#34;);&#10;   document.write(&#34;a + c = &#34;, fun + &#34;&lt;br /&gt;&#34;);&#10;   document.write(&#34;c = &#34; + c + &#34;&lt;br /&gt;&#34;);&#10;   document.write(&#34;b = &#34; + b + &#34;&lt;br /&gt;&#34;);&#10;   document.write(&#34;d = &#34; + d + &#34;&lt;br /&gt;&#34;);   //Czy ta linia jest widoczna w przegl&#261;darce?&#10;  &lt;/script&gt;&#10;  &lt;br&gt;Stron&#281; zmodyfikowano:&#10;  &lt;script type=&#34;text/javascript&#34;&gt;&#10;   document.write(document.lastModified);&#10;  &lt;/script&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;",
+                            "podpis": ""
+                        }
+                    ]
+                },
+                {
+                    "tytul": "1. Obiekty",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "Tworzenie pojedynczego obiektu",
+                            "kod": "&lt;html&gt;&#10;&lt;script&gt;&#10;  var myRectangle = {&#10;   height: 10,&#10;   width: 14,&#10;   print: function () {&#10;    alert(&#34;Surface = &#34; + this.height * this.width)&#10;   }&#10;  }&#10;  myRectangle.print();&#10;  myRectangle.height = 5;&#10;  myRectangle.width = 6;&#10;  myRectangle.print();&#10;&lt;/script&gt;&#10;&lt;/html&gt;",
+                            "podpis": ""
+                        },
+                        {
+                            "tytul": "Dodanie nowej metody do istniejącego obiektu",
+                            "kod": "&lt;html&gt;&#10;&lt;script&gt;&#10;  var myRectangle = {&#10;   height: 10,&#10;   width: 14,&#10;   print: function () {&#10;    alert(&#34;Surface = &#34; + this.height * this.width)&#10;   }&#10;  }&#10;  myRectangle.aspectRatio = function () {&#10;   alert(this.height // this.width);&#10;  }&#10;  myRectangle.aspectRatio();&#10;&lt;/script&gt;&#10;&lt;/html&gt;",
+                            "podpis": ""
+                        },
+                        {
+                            "tytul": "Dodanie i usuwanie właściwości",
+                            "kod": "&lt;html&gt;&#10;&lt;script&gt;&#10;  var myComputer = {&#10;   name: 'IBM',&#10;   CD: 'Pionier',&#10;   HDD: 'WD'&#10;  }&#10;  alert(myComputer.CD);&#10;  delete_myComputer.CD;     // usuni&#281;cie&#10;  alert(myComputer.CD);    // undefined&#10;  myComputer.DVD = &#34;DVP&#8208;SR370&#34;; // dodanie&#10;  alert(myComputer.DVD);&#10;&lt;/script&gt;&#10;&lt;/html&gt;",
+                            "podpis": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
