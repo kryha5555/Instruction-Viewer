@@ -18,7 +18,7 @@
                             "tytul": "",
                             "kod": "",
                             "podpis": "",
-                            "obraz":""
+                            "obraz": ""
                         }
                     ]
                 }
@@ -42,7 +42,7 @@
                             "tytul": "",
                             "kod": "",
                             "podpis": "",
-                            "obraz":""
+                            "obraz": ""
                         }
                     ]
                 }
@@ -64,43 +64,43 @@
             "punkt": [
                 {
                     "tytul": "Wstęp",
-                    "tekst": "tutaj się uczymy o js",
+                    "tekst": "Podstawowe informacje o języku JavaScript",
                     "podpunkt": [
                         {
                             "tytul": "Wyłączona obsługa skryptów",
                             "kod": "&lt;head&gt;&#10;    &lt;style&gt;&#10;        div.js _ sup _ depend {&#10;            color: green;&#10;        }&#10;    &lt;/style&gt;&#10;    &lt;noscript&gt;&#10;        &lt;style&gt;&#10;            div.js_supp _ depend {&#10;                color: red;&#10;            }&#10;        &lt;/style&gt;&#10;    &lt;/noscript&gt;&#10;&lt;/head&gt;&#10;&#10;&lt;body&gt;&#10;    &lt;div class=&#34;js _ sup _ depend&#34;&gt;&#10;        &lt;h2&gt;Your browser &lt;span id=&#34;js _ depend&#34;&gt;&lt;noscript&gt;does not&#10;                    support JavaScript!!!&lt;/noscript&gt;&lt;/span&gt;&lt;/h2&gt;&#10;    &lt;/div&gt;&#10;    &lt;script type=&#34;text/javascript&#34;&gt;&#10;        document.getElementById(&#34;js _ depend&#34;).innerHTML = &#34;support JavaScript!&#34;;&#10;    &lt;/script&gt;&#10;&lt;/body&gt;",
-                            "podpis": "fajny kodzik",
-                            "obraz":""
+                            "podpis": "",
+                            "obraz": ""
                         },
                         {
                             "tytul": "Zmienne globalne i lokalne",
                             "kod": "&lt;html&gt;&#10;&lt;head&gt;&#10;  ...&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;  &lt;script type=&#34;text/javascript&#34;&gt;&#10;   var a = 20;&#10;   document.write(&#34;a = &#34; + a + &#34;&lt;br /&gt;&#34;);&#10;   {&#10;     let a = 2;&#10;     document.write(&#34;a = &#34; + a + &#34;&lt;br /&gt;&#34;);&#10;   }&#10;   document.write(&#34;a = &#34; + a + &#34;&lt;br /&gt;&#34;);&#10;   var b = 'OK';&#10;   var c = true;&#10;   function myFunction() {&#10;    c = 55;&#10;    var a = 1;   //Sprawdzi&#263;, co stanie si&#281; po usuni&#281;ciu &#8222;var&#8221; przed &#8222;a&#8221;&#10;    var d = 'NO';&#10;    result = a + c;&#10;    return result;&#10;   }&#10;   var fun = myFunction();&#10;   document.write(&#34;a &#8208;&gt; &#34; + typeof (a) + &#34;&lt;br /&gt;&#34;);&#10;   document.write(&#34;b &#8208;&gt; &#34; + typeof (b) + &#34;&lt;br /&gt;&#34;);&#10;   document.write(&#34;c &#8208;&gt; &#34; + typeof (c) + &#34;&lt;br /&gt;&#34; + &#34;&lt;br /&gt;&#34;);&#10;   document.write(&#34;a = &#34; + a + &#34;&lt;br /&gt;&#34;);&#10;   document.write(&#34;a + c = &#34;, fun + &#34;&lt;br /&gt;&#34;);&#10;   document.write(&#34;c = &#34; + c + &#34;&lt;br /&gt;&#34;);&#10;   document.write(&#34;b = &#34; + b + &#34;&lt;br /&gt;&#34;);&#10;   document.write(&#34;d = &#34; + d + &#34;&lt;br /&gt;&#34;);   //Czy ta linia jest widoczna w przegl&#261;darce?&#10;  &lt;/script&gt;&#10;  &lt;br&gt;Stron&#281; zmodyfikowano:&#10;  &lt;script type=&#34;text/javascript&#34;&gt;&#10;   document.write(document.lastModified);&#10;  &lt;/script&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;",
                             "podpis": "",
-                            "obraz":"data:image/png;base64,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"
+                            "obraz": ""
                         }
                     ]
                 },
                 {
-                    "tytul": "1. Obiekty",
+                    "tytul": "Obiekty",
                     "tekst": "",
                     "podpunkt": [
                         {
                             "tytul": "Tworzenie pojedynczego obiektu",
                             "kod": "&lt;html&gt;&#10;&lt;script&gt;&#10;  var myRectangle = {&#10;   height: 10,&#10;   width: 14,&#10;   print: function () {&#10;    alert(&#34;Surface = &#34; + this.height * this.width)&#10;   }&#10;  }&#10;  myRectangle.print();&#10;  myRectangle.height = 5;&#10;  myRectangle.width = 6;&#10;  myRectangle.print();&#10;&lt;/script&gt;&#10;&lt;/html&gt;",
                             "podpis": "",
-                            "obraz":""
+                            "obraz": ""
                         },
                         {
                             "tytul": "Dodanie nowej metody do istniejącego obiektu",
                             "kod": "&lt;html&gt;&#10;&lt;script&gt;&#10;  var myRectangle = {&#10;   height: 10,&#10;   width: 14,&#10;   print: function () {&#10;    alert(&#34;Surface = &#34; + this.height * this.width)&#10;   }&#10;  }&#10;  myRectangle.aspectRatio = function () {&#10;   alert(this.height // this.width);&#10;  }&#10;  myRectangle.aspectRatio();&#10;&lt;/script&gt;&#10;&lt;/html&gt;",
                             "podpis": "",
-                            "obraz":""
+                            "obraz": ""
                         },
                         {
                             "tytul": "Dodanie i usuwanie właściwości",
                             "kod": "&lt;html&gt;&#10;&lt;script&gt;&#10;  var myComputer = {&#10;   name: 'IBM',&#10;   CD: 'Pionier',&#10;   HDD: 'WD'&#10;  }&#10;  alert(myComputer.CD);&#10;  delete_myComputer.CD;     // usuni&#281;cie&#10;  alert(myComputer.CD);    // undefined&#10;  myComputer.DVD = &#34;DVP&#8208;SR370&#34;; // dodanie&#10;  alert(myComputer.DVD);&#10;&lt;/script&gt;&#10;&lt;/html&gt;",
                             "podpis": "",
-                            "obraz":""
+                            "obraz": ""
                         }
                     ]
                 }
@@ -124,7 +124,1231 @@
                             "tytul": "",
                             "kod": "",
                             "podpis": "",
-                            "obraz":""
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numer": 4,
+            "temat": "JavaScript – cz. 2",
+            "specyfikacja": [
+                {
+                    "opis": "Brak instrukcji",
+                    "link": ""
+                }
+            ],
+            "punkt": [
+                {
+                    "tytul": "",
+                    "tekst": "",
+                    "podpunkt": [
+                        {
+                            "tytul": "",
+                            "kod": "",
+                            "podpis": "",
+                            "obraz": ""
                         }
                     ]
                 }
