@@ -1,4 +1,47 @@
+let wypiszMenu = () => {
+    let menuRoot = document.getElementById("interface");
+    while (menuRoot.firstChild)
+        menuRoot.removeChild(menuRoot.firstChild);
+
+    //menuRoot.innerHTML = "<ul><div class=\"menuheader\">Wybierz instrukcję</div></ul>";
+
+    let ul = document.createElement("ul");
+    let menuheader = document.createElement("div");
+    menuheader.className = "menuheader";
+    ul.appendChild(menuheader);
+    menuheader.innerHTML = "Wybierz instrukcję";
+    menuRoot.appendChild(ul);
+
+    for (instr in jsonObj.instrukcja) {
+        //console.log(jsonObj.instrukcja[instr]);
+        let li = document.createElement("li")
+        let mins = document.createElement("div");
+        mins.className = "minstr";
+        mins.setAttribute("onclick", "wypiszInstrukcje(" + instr + ")");
+        li.appendChild(mins)
+
+        mins.innerHTML = jsonObj.instrukcja[instr].numer + ". " + jsonObj.instrukcja[instr].temat;
+
+        ul.appendChild(li);
+    }
+
+
+
+}
 let wypiszInstrukcje = (instr) => {
+    wypiszMenu();
+    let li = document.getElementsByTagName("li")[instr];
+
+    for (p in jsonObj.instrukcja[instr].punkt) {
+        console.log(jsonObj.instrukcja[instr].punkt[p]);
+        if (jsonObj.instrukcja[instr].punkt[p].tytul !== "") {
+            let mpunkt = document.createElement("div");
+            mpunkt.className = "mpunkt";
+            li.appendChild(mpunkt);
+            mpunkt.innerHTML = jsonObj.instrukcja[instr].punkt[p].tytul;
+        }
+    }
+
 
     let instrukcjaRoot = document.getElementById("instrukcja");
     while (instrukcjaRoot.firstChild)
@@ -69,6 +112,8 @@ let wypiszInstrukcje = (instr) => {
     }
 }
 
+
+addEventListener('load', wypiszMenu);
 var xmlhttp = new XMLHttpRequest();
 var url = "instr.json";
 var jsonObj;
