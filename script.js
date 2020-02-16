@@ -1,43 +1,31 @@
-let wypiszInstrukcje = () => {
-    var instr = document.getElementById("wybor").value;
-    console.log(instr);
+let wypiszInstrukcje = (instr) => {
 
     let instrukcjaRoot = document.getElementById("instrukcja");
-    while (instrukcjaRoot.firstChild) {
+    while (instrukcjaRoot.firstChild)
         instrukcjaRoot.removeChild(instrukcjaRoot.firstChild);
-    }
+    //var instr = document.getElementById("wybor").value;
+
     let numer = document.createElement("div");
     numer.className = "numer";
     instrukcjaRoot.appendChild(numer);
+    numer.innerHTML = "Ćwiczenie nr " + jsonObj.instrukcja[instr].numer;
 
     let temat = document.createElement("div");
     temat.className = "temat";
     instrukcjaRoot.appendChild(temat);
-
-    // let specroot = document.createElement("div");
-    // specroot.className = "specroot";
-    // instrukcjaRoot.appendChild(specroot);
-
-    // let punktroot = document.createElement("div");
-    // punktroot.className = "punktroot";
-    // instrukcjaRoot.appendChild(punktroot);
-
-
-    numer.innerHTML = "Ćwiczenie nr " + jsonObj.instrukcja[instr].numer;
     temat.innerHTML = "Temat: " + jsonObj.instrukcja[instr].temat;
 
     for (sp in jsonObj.instrukcja[instr].specyfikacja) {
         let specyfikacja = document.createElement("div");
         specyfikacja.className = "specyfikacja";
-
-        specyfikacja.innerHTML = jsonObj.instrukcja[instr].specyfikacja[sp].opis + ": <a href=\"" + jsonObj.instrukcja[instr].specyfikacja[sp].link + "\" target=\"_blank\">" + jsonObj.instrukcja[instr].specyfikacja[sp].link + "</a><br/>";
         instrukcja.appendChild(specyfikacja);
-
+        specyfikacja.innerHTML = jsonObj.instrukcja[instr].specyfikacja[sp].opis + ": <a href=\"" + jsonObj.instrukcja[instr].specyfikacja[sp].link + "\" target=\"_blank\">" + jsonObj.instrukcja[instr].specyfikacja[sp].link + "</a><br/>";
     }
-    for (p in jsonObj.instrukcja[instr].punkt) {
 
+    for (p in jsonObj.instrukcja[instr].punkt) {
         let punkt = document.createElement("div");
         punkt.className = "punkt";
+        instrukcja.appendChild(punkt);
 
         let tytul = document.createElement("div");
         tytul.className = "tytul";
@@ -50,7 +38,6 @@ let wypiszInstrukcje = () => {
         tekst.innerHTML = jsonObj.instrukcja[instr].punkt[p].tekst;
 
         for (pp in jsonObj.instrukcja[instr].punkt[p].podpunkt) {
-
             let podpunkt = document.createElement("div");
             podpunkt.className = "podpunkt";
             punkt.appendChild(podpunkt);
@@ -66,15 +53,20 @@ let wypiszInstrukcje = () => {
                 podpunkt.appendChild(kod);
                 kod.innerHTML = "<table><td><pre><code>" + jsonObj.instrukcja[instr].punkt[p].podpunkt[pp].kod + "</code></pre></td></table>";
             }
+
             let podpis = document.createElement("div");
             podpis.className = "podpis";
             podpunkt.appendChild(podpis);
             podpis.innerHTML = jsonObj.instrukcja[instr].punkt[p].podpunkt[pp].podpis;
+
+            if (jsonObj.instrukcja[instr].punkt[p].podpunkt[pp].obraz !== "") {
+                let obraz = document.createElement("div");
+                obraz.className = "obraz";
+                podpunkt.appendChild(obraz);
+                obraz.innerHTML = "<img src=" + jsonObj.instrukcja[instr].punkt[p].podpunkt[pp].obraz + " width='100' height='100'></img>";
+            }
         }
-
-        instrukcja.appendChild(punkt);
     }
-
 }
 
 var xmlhttp = new XMLHttpRequest();
@@ -82,10 +74,11 @@ var url = "instr.json";
 var jsonObj;
 
 xmlhttp.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 200) {
+    if (this.readyState == 4 && this.status == 200)
         jsonObj = JSON.parse(this.responseText);
-        console.log(jsonObj);
-    }
 }
+
 xmlhttp.open("GET", url, true);
 xmlhttp.send();
+
+//todo dodać ify jak przy kodzie i obrazie

@@ -4,23 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <script type="text/javascript" src="script.js"></script>
-    <style>
-        td {
-            border: 1px solid black;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
     <div id="interface">
-        <label for="wybor">Wybierz instrukcję:</label>
+        <ul>
+            <li class="dropdown">
+                <div class="dropbtn">Wybierz instrukcję</div>
+                <div class="dropdown-content">
+                    <div class="wyb" onclick="wypiszInstrukcje(0)">1. Podstawy HTML</div>
+                    <div class="wyb" onclick="wypiszInstrukcje(1)">2. HTML DOM</div>
+                    <div class="wyb" onclick="wypiszInstrukcje(2)">3. JavaScript – cz. 1</div>
+                    <div class="wyb" onclick="wypiszInstrukcje(3)">4. JavaScript - cz. 2</div>
+                </div>
+            </li>
+        </ul>
 
+        <!--<label for="wybor">Wybierz instrukcję:</label>
         <select id="wybor" onchange="wypiszInstrukcje()">
             <option value="0">1. Podstawy HTML</option>
             <option value="1">2. HTML DOM</option>
             <option value="2">3. JavaScript – cz. 1</option>
             <option value="3">4. JavaScript - cz. 2</option>
-        </select>
+        </select>-->
     </div>
 
     <div id="instrukcja"></div>
