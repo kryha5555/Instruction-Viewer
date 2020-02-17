@@ -4,7 +4,7 @@ body {
   padding: 0;
 }
 
-ul {
+#interface ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -60,14 +60,14 @@ li .active {
   /*flex: 0 1 auto;*/
   height: 100vh;
   overflow: auto;
-  max-width: 15%;
+  max-width: 16%;
 }
 
 #instrukcja {
   flex: 1;
   height: 100vh;
   overflow: auto;
-  padding-left: 10px;
+  padding-left: 15px;
 }
 
 td {
@@ -77,4 +77,29 @@ td {
 pre {
   white-space: pre-wrap;
   word-wrap: break-word;
+  margin: 13px 5px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-weight: normal;
+  font-style: italic;
+}
+.tekst {
+  font-style: italic;
+}
+.podtytul {
+  font-weight: bold;
+}
+
+.podpunkt:last-child {
+  margin-bottom: 20px;
+}
+
+.podtytul p i {
+  font-weight: normal;
 }
