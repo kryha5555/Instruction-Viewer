@@ -34,15 +34,12 @@ let wypiszMenu = () => {
         ul.appendChild(li);
     }
 
-
-
 }
 let wypiszInstrukcje = (instr) => {
-
     let czyZwin = document.getElementsByTagName("li")[instr].getElementsByClassName("mpunkt").length;
     wypiszMenu();
-    let li = document.getElementsByTagName("li")[instr];
 
+    let li = document.getElementsByTagName("li")[instr];
     document.title = jsonObj.instrukcja[instr].temat;
     document.getElementsByClassName("minstr")[instr].className += " active";
 
@@ -68,7 +65,6 @@ let wypiszInstrukcje = (instr) => {
     let temat = document.createElement("div");
     temat.className = "temat";
     instrukcjaRoot.appendChild(temat);
-    //temat.innerHTML = "Temat: " + jsonObj.instrukcja[instr].temat;
     temat.innerHTML = "<h2>" + jsonObj.instrukcja[instr].temat + "</h2>";
 
     let ul = document.createElement("ul");
@@ -147,7 +143,8 @@ let wypiszPunkt = (instr, p) => {
             }
         }
     }
-
+    hljs.initHighlighting.called = false;
+    hljs.initHighlighting();
 }
 var url = "instr.json";
 var jsonObj;
